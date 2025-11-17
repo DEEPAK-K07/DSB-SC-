@@ -78,8 +78,8 @@ xgrid
 ```
 
 __Output Graph__:
-<img width="770" height="421" alt="2" src="https://github.com/user-attachments/assets/6e81bc68-757c-4141-b628-2c388617f347" />
 
+<img width="770" height="421" alt="2" src="https://github.com/user-attachments/assets/6e81bc68-757c-4141-b628-2c388617f347" />
 
 
 __Tablular Column__:
