@@ -49,8 +49,8 @@ __Model Waveform__:
 
 __Program__:
 
-```c
 
+```c
 
 ac=18.6;
 Am=9.3;
@@ -76,8 +76,8 @@ plot(t,e3);
 title("Double side band suppressed carrier");
 xgrid
 
-
 ```
+
 
 __Output Graph__:
 
