@@ -51,6 +51,7 @@ __Program__:
 
 ```c
 
+
 ac=18.6;
 Am=9.3;
 fc=5000;
@@ -74,6 +75,7 @@ subplot(3,1,3);
 plot(t,e3);
 title("Double side band suppressed carrier");
 xgrid
+
 
 ```
 
