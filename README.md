@@ -3,18 +3,18 @@
 
 EX NO: 2	DSB-SC-AM MODULATOR AND DEMODULATOR
 
-AIM:
+__AIM__:
 
 To write a program to perform DSBSC modulation and demodulation using SCI LAB and study its spectral characteristics
 
-EQUIPMENTS REQUIRED
+__EQUIPMENTS REQUIRED__:
 
 •	Computer with i3 Processor
 •	SCI LAB
 
 Note: Keep all the switch faults in off position
 
-Algorithm:
+__Algorithm__:
 
 1.	Define Parameters:
 •	Fs: Sampling frequency.
@@ -43,19 +43,51 @@ PROCEDURE
 •	If any Error, correct it in code and execute again
 •	Verify the generated waveform using Tabulation and Model Waveform
 
-Model Waveform
+__Model Waveform__:
 
 <img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/e7c7c7f8-ccf2-41ac-b1f3-325989941a6f" />
 
-Program
+__Program__:
 
-Output Graph
+```c
+
+ac=18.6;
+Am=9.3;
+fc=5000;
+fm=500;
+fs=950000;
+t=0:1/fs:2/fm;
+wc=2*3.14*fc;
+wm=2*3.14*fm;
+e1=(Am*sin(wm*t));
+subplot(3,1,1);
+plot(t,e1);
+title("Modulating signal");
+xgrid
+e2=(ac*sin(wc*t));
+subplot(3,1,2);
+plot(t,e2);
+title("Carrier signal");
+xgrid
+e3=(Am/2.*cos(wc*t-wm*t))-(Am/2.*cos(wc*t+wm*t));
+subplot(3,1,3);
+plot(t,e3);
+title("Double side band suppressed carrier");
+xgrid
+
+```
+
+__Output Graph__:
+<img width="770" height="421" alt="2" src="https://github.com/user-attachments/assets/6e81bc68-757c-4141-b628-2c388617f347" />
 
 
-Tablular Column
+
+__Tablular Column__:
+
+![WhatsApp Image 2025-11-17 at 23 50 28_c4f327e2](https://github.com/user-attachments/assets/654f00d5-8e9b-4726-bee8-67a13eca2727)
 
 
-Result
+__Result__:
 
 Thus the DSB-SC-AM Modulation and Demodulation is generated.
 
